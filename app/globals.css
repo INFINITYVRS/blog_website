@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
+}
+
+.dark {
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --border: #1e293b;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer base {
+  h1 {
+    @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  }
+  h2 {
+    @apply scroll-m-20 text-3xl font-semibold tracking-tight;
+  }
+  h3 {
+    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  }
+  p {
+    @apply leading-7;
+  }
+  blockquote {
+    @apply mt-6 border-l-2 border-primary pl-6 italic;
+  }
+}
+
+@layer utilities {
+  .transition-max-width {
+    transition-property: max-width;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+}
+
+.dark .prose {
+  color: #f8fafc;
+}
+
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4,
+.dark .prose h5,
+.dark .prose h6 {
+  color: #f8fafc;
+}
+
+.dark .prose a {
+  color: #3b82f6;
+}
+
+.dark .prose strong {
+  color: #f8fafc;
+}
+
+.dark .prose blockquote {
+  color: #94a3b8;
+  border-left-color: #1e293b;
+}
+
+.dark .prose code {
+  color: #f8fafc;
+  background-color: #1e293b;
+}
+
+.dark .prose pre {
+  background-color: #1e293b;
+}
+
+.dark .prose hr {
+  border-color: #1e293b;
+}
+
+.dark .prose ul,
+.dark .prose ol {
+  color: #f8fafc;
+}
+
