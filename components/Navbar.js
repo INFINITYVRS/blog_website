@@ -48,18 +48,7 @@ export default function Navbar() {
           </div>
 
           <nav className="hidden md:ml-6 md:flex md:space-x-8">
-            <Link
-              href="#"
-              className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white"
-            >
-              Voice AI
-            </Link>
-            <Link
-              href="#"
-              className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white"
-            >
-              About
-            </Link>
+            
             <Link
               href="/"
               className="inline-flex items-center px-1 pt-1 text-sm font-medium text-blue-500 border-b-2 border-blue-500"
